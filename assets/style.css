@@ -94,7 +94,7 @@ header {
 /* hero */
 
 .hero {
-    padding: 130px;
+    padding: 150px;
     background-image: url('./images/laptop.jpg');
     background-size: cover;
     background-position: center;
@@ -143,8 +143,7 @@ header {
 /* hero styles end */
 
 section {
-  padding-left: 50px;
-  padding-top: 40px;
+padding: 50px
 }
 
 /* ABOUT ME SECTION */
@@ -152,12 +151,13 @@ section {
 .about-me-section {
   display: flex;
   justify-content:center;
-  align-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 20px 0 0 0;
 }
 
 section h1 {
+  position: relative;
   font-size: 48px;
   color:  var(--secondary-color);
   text-align: right;
@@ -174,16 +174,19 @@ section h1 {
 .social-icons-1 {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  }
+  margin: 0 70px;
+  text-align: center;
+
+   }
 
 .social-icons-style {
   color: var(--secondary-color);
-  width: 10x;
-  height: 30px;
   margin: 0 10px;
   text-decoration: none;
   font-size: 25px;
+ 
 }
 .social-icons-style:hover {
 color: darkgrey;
@@ -191,6 +194,39 @@ transition: color 0.2s;
 transform: scale(1.4) ;
 transition: all 0.2s;
 }
+
+/* social icons end */
+
+
+
+
+/* WORK */
+
+
+
+
+
+
+
+/* contact me */
+
+.contact-me {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 150px 0 150px;
+}
+
+.contact-me-info {
+  font-size: 30px;
+}
+
+.text-dec-none {
+  text-decoration: none;
+}
+
+
 
 
   /* FOOTER STYLES START */
@@ -201,8 +237,7 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    opacity: 0.8;
-    
+     
   }
   
   
@@ -216,7 +251,7 @@ footer {
   footer img {
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
-    opacity: 0.7;
+    opacity: 1;
   }
   
 
