@@ -20,39 +20,37 @@
 
 
 header {
-    position: relative;
-    padding: 20px 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-position: 80%;
-    z-index: 9999;
-    header {
-      height: 600px;
-      width: 100vw;
-      background: black;
-      overflow: hidden;
+  padding: 20px 35px;
+  background-color: var(--tertiary-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position:sticky;
+  top: 0;
+  background-image: url('./images/laptop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
+  opacity: ;
   }
-  
-  img {
-     object-fit: cover;
-     opacity: 0.4;
-  }
-  
   }
 
   header::before {
-      content: '';
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
+    content: '';
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
     background-image: url('./images/laptop.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    opacity: 0.7
+    opacity: 
 
   }
 
@@ -106,19 +104,21 @@ header {
     align-items: flex-start;
     background-attachment: fixed;
     background-position: 80%;   
-    opacity: 0.7;
+    opacity:;
   }
 
 
 .hero-txt-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   border: 3px  var(--tertiary-color);
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 25px 50px;
   border-radius: 25px;
 
+ 
 }
 
 .hero-text {
