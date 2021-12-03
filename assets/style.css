@@ -188,6 +188,8 @@ section h1 {
 .social-icons-style:hover {
 color: darkgrey;
 transition: color 0.2s;
+transform: scale(1.4) ;
+transition: all 0.2s;
 }
 
 
