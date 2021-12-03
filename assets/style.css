@@ -20,38 +20,51 @@
 
 
 header {
-    padding: 20px 35px;
-    background-color: var(--tertiary-color);
+    position: relative;
+    padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position:sticky;
-    top: 0;
-    background-image: url(https://ucarecdn.com/bd5109a1-0452-447d-83b3-074c67e8866d/Untitleddesign.png);
+    background-position: 80%;
+    z-index: 9999;
+    header {
+      height: 600px;
+      width: 100vw;
+      background: black;
+      overflow: hidden;
+  }
+  
+  img {
+     object-fit: cover;
+     opacity: 0.4;
+  }
+  
+  }
+
+  header::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+    background-image: url('./images/laptop.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-position: 80%;
-    z-index: 9999;
-    opacity: 0.8;
-  }
-
-  header h1 {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    
-  }
-
-  header a {
-    text-decoration: none;
-    color: var(--tertiary-color);
-  }
-  
-  header nav {
+    opacity: 0.7
 
   }
+
+  /*drop shadow on png*/
+  header div {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(10px 10px 25px #222);
+    }
+
   
   header nav ul {
+    position: relative;
     padding: 15px 0 0 0;
     display: flex;
     flex-wrap: wrap;
@@ -59,13 +72,17 @@ header {
     align-items: center;
     list-style: none;
   }
-  
+
+
   header nav ul li a {
+      color: white;
     padding: 10px 15px;
     font-weight: bold;
-    font-size: 1.55vw;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    font-size: 1.4vw;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 5);
+    text-decoration: underline;    
   }
+
   header nav ul li a:hover {
     background: var(--tertiary-color);
     color: white;
@@ -76,6 +93,51 @@ header {
   /* HEADER / NAVBAR STYLES END */
   
 
+/* hero */
+
+.hero {
+    padding: 150px;
+    background-image: url('./images/laptop.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;   
+    opacity: 0.7;
+  }
+
+
+.hero-txt-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 3px  var(--tertiary-color);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 25px 50px;
+  border-radius: 25px;
+
+}
+
+.hero-text {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font: bold;
+    font-size: 60px;
+    text-align: left;
+    }
+
+.hero-text-img {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 250px;
+  margin-left: 40px;
+  margin-right: 0;
+  margin-top: 5px;
+  }
 
 
 
@@ -84,12 +146,13 @@ header {
   /* FOOTER STYLES START */
 footer {
     background-image: url(https://ucarecdn.com/bd5109a1-0452-447d-83b3-074c67e8866d/Untitleddesign.png);
-    padding: 30px 35px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
     opacity: 0.8;
+    
   }
   
   
@@ -99,7 +162,15 @@ footer {
     text-align: right;
     
   }
+
+  footer img {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    opacity: 0.7;
+  }
   
+
+
   footer a {
     text-decoration: none;
     color: black;
