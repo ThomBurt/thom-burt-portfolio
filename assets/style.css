@@ -7,7 +7,7 @@
   :root {
     --primary-color: #fce138;
     --secondary-color: #1e1e31;
-    --tertiary-color: black;
+    --tertiary-color: #476372;
   }
 
   body {
@@ -155,7 +155,7 @@ padding: 50px
 }
 
 section h1 {
-  position: relative;
+  position: ;
   font-size: 48px;
   color:  var(--secondary-color);
   text-align: right;
@@ -163,9 +163,19 @@ section h1 {
   border-right: 4px solid var(--secondary-color);
 }
 
+.section-title {
+  font-size: 48px;
+  border-bottom: 3px solid;
+  color: var(--secondary-color);
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
 .section-text-box {
+  width: 60%;
   padding: 10px 25px; 
-  line-height: 1.5;
 }
 
 
@@ -203,23 +213,25 @@ transition: all 0.2s;
 
 .work {
   display: flex;
-  justify-content:space-between;
+  justify-content:center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  flex-grow: 2;
+}
+
+.work-title {
+  padding-right: ;
 }
 
 .work-box {
-  border: 3px solid var(--secondary-color);
-  background-image: url('./images/run-buddy.png');
-  background-size: cover;
-  background-position:top;
-  padding: 80px 180px;
-  border-radius: 5px;
+  width: 58%;
+  padding: 0 0 0 100px;
   opacity: 0.8;
 }
 
 .run-buddy-box {
+  position: relative;
   padding: 10px 50px;
   background-color: var(--secondary-color);
   float: left;
@@ -227,6 +239,8 @@ transition: all 0.2s;
 
 .work-box:hover {
   opacity: 1;
+  transform: scale(1.1);
+  transition: 0.4s;
 }
 
 
@@ -245,12 +259,20 @@ transition: all 0.2s;
 .contact-me-info {
   font-size: 30px;
   line-height: 1.8;
+  padding-right: 380px;
 }
 
 
 .email-link {
   text-decoration: none;
   color: var(--secondary-color);
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 
