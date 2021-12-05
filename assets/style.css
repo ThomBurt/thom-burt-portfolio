@@ -226,7 +226,7 @@ transition: all 0.2s;
 
 .work-box {
   width: 58%;
-  padding: 0 0 0 100px;
+  padding: 0 0 0 125px;
   opacity: 0.8;
 }
 
@@ -257,6 +257,7 @@ transition: all 0.2s;
 }
 
 .contact-me-info {
+  color: var(--secondary-color);
   font-size: 30px;
   line-height: 1.8;
   padding-right: 380px;
@@ -266,6 +267,10 @@ transition: all 0.2s;
 .email-link {
   text-decoration: none;
   color: var(--secondary-color);
+}
+.email-link:hover {
+color: darkgrey;
+transition: color 0.2s;
 }
 
 .contact-icons {
