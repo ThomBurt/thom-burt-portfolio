@@ -217,7 +217,6 @@ transition: all 0.2s;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  flex-grow: 2;
 }
 
 .work-title {
@@ -230,14 +229,18 @@ transition: all 0.2s;
   opacity: 0.8;
 }
 
-.run-buddy-box {
-  position: relative;
-  padding: 10px 50px;
-  background-color: var(--secondary-color);
-  float: left;
+.run-buddy-image {
+  opacity: 0.8;
 }
 
-.work-box:hover {
+.run-buddy-box {
+  position: absolute;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.run-buddy-image:hover {
   opacity: 1;
   transform: scale(1.1);
   transition: 0.4s;
@@ -280,6 +283,14 @@ transition: color 0.2s;
   flex-wrap: wrap;
 }
 
+.contact-img {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 250px;
+  margin-left: -387px;;
+  margin-right: 110px;
+  margin-top: 5px;
+  }
 
 
 
