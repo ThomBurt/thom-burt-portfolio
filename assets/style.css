@@ -51,9 +51,6 @@ header {
     background-attachment: fixed;
   }
 
-  .thom-logo {
-
-  }
 
   /*drop shadow on png*/
   header div {
@@ -105,7 +102,6 @@ header {
     align-items: flex-start;
     background-attachment: fixed;
     background-position: 80%;   
-    opacity:;
   }
 
 
@@ -159,7 +155,6 @@ padding: 50px
 }
 
 section h1 {
-  position: ;
   font-size: 48px;
   color:  var(--secondary-color);
   text-align: right;
@@ -387,14 +382,9 @@ footer div a:hover {
 
   .thom-logo {
     padding-right: 300px;
+ 
   }
 
-  .run-buddy-image {
-padding: ;
-  }
-  .contact-me {
-    padding: 
-  }
   .contact-me-info {
     font-size: 25px;
     padding-right: 0;
@@ -417,35 +407,36 @@ padding: ;
     padding: 30px 15px;
   }
 
-  .work {
-    width: 100%;
+  .thom-logo {
+    padding-right: 539px;
   }
 
-  }
+.work-title {
+  margin-left: 67px;
 }
 
+.run-buddy-image {
+  margin-right: 154px;
+}
 
+.contact-me {
+  padding: 41px 147px 0 8px;
+}
+
+.contact-img {
+  margin-left: 290px;
+}
+
+}
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-  .hero-form button {
-    width: 100%;
-  }
-
-  .section-title {
-    width: 95%;
-  }
-
-
-  .work {
-    width: 100%;
-  }
-
-  header nav ul a {
-
-  font-size: 25px;
-  
+.thom-logo {
+  padding-right: 343px;
 }
 
+.hero-text-img {
+  margin-left: 0;
+}
 
 }
