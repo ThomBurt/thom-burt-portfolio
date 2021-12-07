@@ -432,11 +432,50 @@ footer div a:hover {
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
 .thom-logo {
-  padding-right: 343px;
+  padding-right: 5px;
 }
 
 .hero-text-img {
   margin-left: 0;
+}
+
+.hero-text {
+  font-size: 32px;
+}
+
+.hero-txt-box {
+
+}
+
+section h1 {
+  font-size: 32px;
+  padding: 0 200px 0 20ppx;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.work-title {
+  margin-left: 40px;
+}
+
+.run-buddy-image {
+  margin-right: 50px;
+}
+
+footer {
+  justify-content: center;
+}
+
+.contact-img {
+  margin-left: 181px;
+}
+
+.contact-me-info {
+font-size: 20px;
+}
+.contact-me {
+  padding: 41px 78px 0 8px;
 }
 
 }
