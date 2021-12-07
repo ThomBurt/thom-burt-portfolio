@@ -340,6 +340,17 @@ footer div a:hover {
 
   /* Media Queries */
 
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1357px) {
+  .run-buddy-image {
+    margin-right: 0;
+  }
+  .work-title {
+    margin-left: 100px;
+  }
+
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
@@ -396,9 +407,20 @@ footer div a:hover {
     align-items: center;
 
   }
+  .work-title {
+    margin-left: 100px;
+  }
   
 }
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 798px) {
+  .run-buddy-image {
+    margin-right: 0;
+  }
 
+.work-title {
+  margin-left: 100px;
+}
 
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
