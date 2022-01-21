@@ -253,6 +253,25 @@ transition: all 0.2s;
   transition: 0.4s;
 }
 
+.dinner-spinner-image {
+  margin: 10px;
+  margin-right: 565px;
+  padding: 67px 140px;
+  border: 3px solid var(--secondary-color);
+  border-radius: 15px;
+  background-image: url(images/dinnerspinner.png);
+  background-size:contain;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  opacity: 1;
+}
+.dinner-spinner-image:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
 
 
 /* contact me */
